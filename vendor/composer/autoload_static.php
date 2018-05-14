@@ -6,6 +6,10 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit7a423bec70a39ceb1c2f89c48f671588
 {
+    public static $fallbackDirsPsr4 = array (
+        0 => __DIR__ . '/../..' . '/',
+    );
+
     public static $classMap = array (
         'Smarty' => __DIR__ . '/..' . '/smarty/smarty/libs/Smarty.class.php',
         'SmartyBC' => __DIR__ . '/..' . '/smarty/smarty/libs/SmartyBC.class.php',
@@ -17,6 +21,7 @@ class ComposerStaticInit7a423bec70a39ceb1c2f89c48f671588
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+            $loader->fallbackDirsPsr4 = ComposerStaticInit7a423bec70a39ceb1c2f89c48f671588::$fallbackDirsPsr4;
             $loader->classMap = ComposerStaticInit7a423bec70a39ceb1c2f89c48f671588::$classMap;
 
         }, null, ClassLoader::class);

@@ -1,4 +1,10 @@
 {
+
+    "name": "dreamerwinston/Dreamer_space",
+    "description": "筑梦师winston_PHP练手Demo",
+    "keywords": ["dreamer", "winston", "php"],
+    "license": "MIT",
+    "type": "project",
     "repositories": {
         "packagist": {
             "type": "composer",
@@ -7,5 +13,10 @@
     },
     "require": {
         "smarty/smarty": "3.1.16"
+    },
+    "autoload": {
+        "psr-4": {
+            "": ""
+        }
     }
 }
