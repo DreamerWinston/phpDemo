@@ -4,7 +4,7 @@
 
 require 'Main/Appliction.php';
 
-//\Main\Application::run();
+\Main\Application::run();
 
 
 ?>
