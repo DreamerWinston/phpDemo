@@ -6,9 +6,18 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit7a423bec70a39ceb1c2f89c48f671588
 {
+    public static $classMap = array (
+        'Smarty' => __DIR__ . '/..' . '/smarty/smarty/libs/Smarty.class.php',
+        'SmartyBC' => __DIR__ . '/..' . '/smarty/smarty/libs/SmartyBC.class.php',
+        'SmartyCompilerException' => __DIR__ . '/..' . '/smarty/smarty/libs/Smarty.class.php',
+        'SmartyException' => __DIR__ . '/..' . '/smarty/smarty/libs/Smarty.class.php',
+        'Smarty_Security' => __DIR__ . '/..' . '/smarty/smarty/libs/sysplugins/smarty_security.php',
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+            $loader->classMap = ComposerStaticInit7a423bec70a39ceb1c2f89c48f671588::$classMap;
 
         }, null, ClassLoader::class);
     }
