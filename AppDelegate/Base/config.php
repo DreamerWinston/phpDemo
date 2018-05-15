@@ -4,7 +4,7 @@ $config = array(
 
 //    默认路由参数
     'defaultPlatform' => 'frontend',
-    'defaultAction' => 'getList',
+    'defaultAction' => 'index',
     'defaultController' => 'Home',
 
 //    默认数据库参数

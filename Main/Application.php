@@ -67,9 +67,9 @@ class Application
 
         define('APP_PATH',ROOT_PATH . DS .'AppDelegate');
 
-        define('VIEW_PATH',APP_PATH . DS .'view');
+        define('VIEW_PATH',APP_PATH . DS .'Views');
 
-        define('CONFIG_PATH',APP_PATH . DS .'config');
+        define('CONFIG_PATH',APP_PATH . DS .'Base');
 
     }
 
@@ -89,7 +89,7 @@ class Application
     }
 
     public static function _registerAutoload(){
-        require CONFIG_PATH . DS . 'vendor'.DS.'autoload.php';
+        require ROOT_PATH . DS . 'vendor'. DS .'autoload.php';
     }
 
     public static function _filterGlobalVariable(){
@@ -103,7 +103,15 @@ class Application
     public static function _dispatchRoute(){
         $a =ACTION;
 
-        $c ='\\AppDelegate\\controller\\'.PLATFORM .'\\'.CONTROLLER.'Controller';
+//        $c ='\\AppDelegate\\Service\\'. PLATFORM . '\\' . CONTROLLER .'Controller';
+
+        $c = '\\AppDelegate\\Service\\' . PLATFORM . '\\' . CONTROLLER . 'Controller';
+
+//        $c ='/AppDelegate/Service/frontend/HomeController';
+//        require_once '/Applications/MAMP/htdocs/Dreamer_space/AppDelegate/Service/frontend/HomeController.php';
+        echo $c;
+//        $c ='/AppDelegate/Service/'. PLATFORM . '/' . CONTROLLER .'Controller.php';
+//        $test = CONTROLLER;
 
         $ctrl =new $c();
 

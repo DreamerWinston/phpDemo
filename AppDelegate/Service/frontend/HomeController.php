@@ -2,7 +2,18 @@
 
 namespace  AppDelegtate\Service\frontend;
 
-class  HomeController extends  \Main\Controller{
+
+use \Main\Controller;
+
+//use AppDelegate\Service\frontend\Controller;
+
+class HomeController extends Controller{
+
+    public function index()
+    {
+        $this->loadHtml('home/index',array(
+        ));
+    }
 
 
 }
