@@ -9,6 +9,8 @@ class Application
 {
 
     public static $config;
+    public static $rawGET;
+    public static $rawPOST;
 
     public static function run(){
 
@@ -78,8 +80,8 @@ class Application
 
     public static function _parserUrlParams(){
         $p =isset($_GET['p']) ? $_GET['p'] : self::$config['defaultPlatform'];
-        $a =isset($_GET['p']) ? $_GET['p'] : self::$config['defaultPlatform'];
-        $c =isset($_GET['p']) ? $_GET['p'] : self::$config['defaultPlatform'];
+        $a =isset($_GET['a']) ? $_GET['a'] : self::$config['defaultAction'];
+        $c =isset($_GET['c']) ? $_GET['c'] : self::$config['defaultController'];
 
         define('PLATFORM',$p);
         define('ACTION',$a);

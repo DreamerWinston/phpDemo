@@ -1,4 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/smarty/smarty" />
+      <path value="$PROJECT_DIR$/vendor/jquery-easyui-1.5.5.1/src" />
+      <path value="$PROJECT_DIR$/vendor/jquery-easyui-1.5.5.1/demo-mobile" />
+      <path value="$PROJECT_DIR$/vendor/jquery-easyui-1.5.5.1/themes" />
+      <path value="$PROJECT_DIR$/vendor/jquery-easyui-1.5.5.1/demo" />
+      <path value="$PROJECT_DIR$/vendor/jquery-easyui-1.5.5.1/locale" />
+      <path value="$PROJECT_DIR$/vendor/jquery-easyui-1.5.5.1/plugins" />
+    </include_path>
+  </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />
 </project>
