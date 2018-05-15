@@ -1,9 +1,9 @@
 <?php
 
-namespace AppDelegate\Service\frontend;
+namespace app\service\frontend;
 
 
-abstract class Controller extends \Main\Controller
+abstract class Controller extends \main\Controller
 {
     public function loadHtml($name, $data = array())
         {

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Main;
+namespace main;
 
 abstract class Model extends  \vendor\PDOWrapper
 {

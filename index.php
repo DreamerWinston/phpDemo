@@ -2,7 +2,8 @@
 
 //导入Application类
 
-require 'Main/Application.php';
+require 'main/Application.php';
 
-\Main\Application::run();
+\main\Application::run();
+
 

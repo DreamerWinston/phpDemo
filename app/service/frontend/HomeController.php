@@ -1,11 +1,11 @@
 <?php
 
-namespace  AppDelegtate\Service\frontend;
+namespace  app\service\frontend;
 
 
-use \Main\Controller;
+//use \Main\Controller;
 
-//use AppDelegate\Service\frontend\Controller;
+use app\service\frontend\Controller;
 
 class HomeController extends Controller{
 

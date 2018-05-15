@@ -2,6 +2,8 @@
 
 namespace vendor;
 
+
+
 class Input
 {
     public static function addslashes($data)

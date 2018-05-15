@@ -1,9 +1,9 @@
 <?php
 
 //命名空间
-namespace Main;
+namespace main;
 
-use vendor\input;
+use vendor\Input;
 
 class Application
 {
@@ -65,11 +65,11 @@ class Application
 
         define('ROOT_PATH',dirname(__DIR__));
 
-        define('APP_PATH',ROOT_PATH . DS .'AppDelegate');
+        define('APP_PATH',ROOT_PATH . DS .'app');
 
-        define('VIEW_PATH',APP_PATH . DS .'Views');
+        define('VIEW_PATH',APP_PATH . DS .'views');
 
-        define('CONFIG_PATH',APP_PATH . DS .'Base');
+        define('CONFIG_PATH',APP_PATH . DS .'base');
 
     }
 
@@ -90,6 +90,7 @@ class Application
 
     public static function _registerAutoload(){
         require ROOT_PATH . DS . 'vendor'. DS .'autoload.php';
+
     }
 
     public static function _filterGlobalVariable(){
@@ -105,7 +106,7 @@ class Application
 
 //        $c ='\\AppDelegate\\Service\\'. PLATFORM . '\\' . CONTROLLER .'Controller';
 
-        $c = '\\AppDelegate\\Service\\' . PLATFORM . '\\' . CONTROLLER . 'Controller';
+        $c = '\\app\\service\\' . PLATFORM . '\\' . CONTROLLER . 'Controller';
 
 //        $c ='/AppDelegate/Service/frontend/HomeController';
 //        require_once '/Applications/MAMP/htdocs/Dreamer_space/AppDelegate/Service/frontend/HomeController.php';
