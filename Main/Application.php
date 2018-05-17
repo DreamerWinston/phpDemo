@@ -104,15 +104,7 @@ class Application
     public static function _dispatchRoute(){
         $a =ACTION;
 
-//        $c ='\\AppDelegate\\Service\\'. PLATFORM . '\\' . CONTROLLER .'Controller';
-
         $c = '\\app\\service\\' . PLATFORM . '\\' . CONTROLLER . 'Controller';
-
-//        $c ='/AppDelegate/Service/frontend/HomeController';
-//        require_once '/Applications/MAMP/htdocs/Dreamer_space/AppDelegate/Service/frontend/HomeController.php';
-        echo $c;
-//        $c ='/AppDelegate/Service/'. PLATFORM . '/' . CONTROLLER .'Controller.php';
-//        $test = CONTROLLER;
 
         $ctrl =new $c();
 

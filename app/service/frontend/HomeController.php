@@ -2,10 +2,7 @@
 
 namespace  app\service\frontend;
 
-
-//use \Main\Controller;
-
-use app\service\frontend\Controller;
+use app\model\UserModel;
 
 class HomeController extends Controller{
 
